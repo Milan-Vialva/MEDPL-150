@@ -23,6 +23,12 @@ p, h1, h2, h3 {
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
+p {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
 /* H2 header styling */
 h2 {
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
