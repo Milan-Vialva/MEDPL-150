@@ -26,8 +26,16 @@ p, h1, h2, h3 {
 p {
     width: 80%;
     max-width: 600px;
-    margin: 20px auto;
+    margin: 30px auto;
+    padding: 20px;
+
+    background-color: #f2d6c9;
+    border-radius: 15px;
+
+    text-align: left;
     line-height: 1.6;
+
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
 }
 
 /* H2 header styling */
