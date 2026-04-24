@@ -24,8 +24,10 @@ p, h1, h2, h3 {
 }
 
 p {
+    width: 80%;
     max-width: 600px;
     margin: 20px auto;
+    line-height: 1.6;
 }
 
 /* H2 header styling */
