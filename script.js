@@ -36,3 +36,16 @@ document.addEventListener("mousemove", (e) => {
 if (timeLeft <= 3) {
     timerElement.style.color = "red";
 }
+
+<script>
+const text = document.getElementById("riddleText");
+const content = text.textContent;
+text.textContent = "";
+
+[...content].forEach((letter, i) => {
+    const span = document.createElement("span");
+    span.textContent = letter;
+    span.style.animationDelay = (i * 0.05) + "s";
+    text.appendChild(span);
+});
+</script>
