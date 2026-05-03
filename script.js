@@ -47,3 +47,7 @@ const countdown = setInterval(() => {
     }
 }, 1000);
 </script>
+
+if (timeLeft <= 3) {
+    timerElement.style.color = "red";
+}
