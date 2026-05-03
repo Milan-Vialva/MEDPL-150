@@ -18,7 +18,19 @@
 
        
         <h3><a href="homework8b.html">Back to Start</a></h3>
-        
+
+        <script>
+const text = document.getElementById("riddleText");
+const content = text.textContent;
+text.textContent = "";
+
+[...content].forEach((letter, i) => {
+    const span = document.createElement("span");
+    span.textContent = letter;
+    span.style.animationDelay = (i * 0.05) + "s";
+    text.appendChild(span);
+});
+</script>
         
     </body>
     </html>
