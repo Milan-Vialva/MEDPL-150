@@ -45,7 +45,10 @@ text.textContent = "";
 [...content].forEach((letter, i) => {
     const span = document.createElement("span");
     span.textContent = letter;
-    span.style.animationDelay = (i * 0.05) + "s";
+
+    // stagger timing (spell effect)
+    span.style.animationDelay = (i * 0.04) + "s";
+
     text.appendChild(span);
 });
 </script>
