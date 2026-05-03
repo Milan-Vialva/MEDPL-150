@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <title>animal</title>
+          <link rel="stylesheet" href="style1.css">
+      </head>
+    <body>
+      <h2>Fawna's Magic Worked!</h2>
+      
+      
+      <p>But only temporarily! When you sucesssfully walked past the eagle, you travel further down the path and see two stone tablets at the end. Carved on them are magical inscriptions: one is a song, and the other has movements. By the context, you believe that this is the final step to finding the Hidden Flower. You can hear the eagle in the distance (it seems like it woke up), and your friends' opinions are split! Quick, which magical spell do you do!?</p>
+      
+      <p id="timer">8</p>
+      
+      <a href="flower.html" class="image-container">
+    <img src="images/dance.png" alt="Magic Dance">
+    <div class="overlay">
+        <div class="image-text">Do the Magic Dance</div>
+    </div>
+</a>
+
+<a href="eagle.html" class="image-container">
+    <img src="images/song.png" alt="Magic Song">
+    <div class="overlay">
+        <div class="image-text">Do the Magic Dance</div>
+    </div>
+</a>
+
+       
+        <h3><a href="homework8b.html">Back to Start</a></h3>
+        
+        <script>
+let timeLeft = 8;
+const timerElement = document.getElementById("timer");
+
+const countdown = setInterval(() => {
+    timeLeft--;
+    timerElement.textContent = timeLeft;
+
+    if (timeLeft <= 0) {
+        clearInterval(countdown);
+        window.location.href = "eagle.html"; // change this to your page
+    }
+}, 1000);
+</script>
+        
+    </body>
+    </html>
+</DOCTYPE>
