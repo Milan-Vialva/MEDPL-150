@@ -33,21 +33,6 @@ document.addEventListener("mousemove", (e) => {
     }, 500);
 });
 
-<script>
-let timeLeft = 10;
-const timerElement = document.getElementById("timer");
-
-const countdown = setInterval(() => {
-    timeLeft--;
-    timerElement.textContent = timeLeft;
-
-    if (timeLeft <= 0) {
-        clearInterval(countdown);
-        window.location.href = "nextpage.html"; // change this to your page
-    }
-}, 1000);
-</script>
-
 if (timeLeft <= 3) {
     timerElement.style.color = "red";
 }
