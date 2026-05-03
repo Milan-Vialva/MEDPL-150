@@ -44,6 +44,13 @@ p {
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
 }
 
+.plain-text {
+    background: none;
+    padding: 0;
+    border-radius: 0;
+    color: white;
+}
+
 /* H2 header styling */
 h2 {
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
