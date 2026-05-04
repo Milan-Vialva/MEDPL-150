@@ -91,27 +91,6 @@ img {
   height: auto;
 }
 
-.navbar {
-  position: fixed;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-
-  display: flex;
-  gap: 40px;
-
-  background-color: #582A80; /* dark purple box */
-  padding: 15px 30px;
-  border-radius: 15px;
-
-  box-shadow: 0 0 15px #AF8DF0; /* soft glow */
-}
-
-.navbar {
-  border: 2px solid #9392F0;
-  box-shadow: 0 0 20px #AF8DF0, 0 0 40px #9392F0;
-}
-
 /* Apply Merriweather font */
 body {
   font-family: 'Merriweather', serif;
