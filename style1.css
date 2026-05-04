@@ -17,6 +17,11 @@ img[src="images/flower.png"] {
     border-radius: 25px;
 }
 
+.small-img {
+    width: 200px !important;
+    height: auto;
+}
+
 .image-container img [src="images/spring.png"] , [src="images/forest.png"] , [src="images/village.png"] , [src="images/stranded.png"] , [src="images/eagle.png"] , [src="images/puzzle.png"] , [src="images/moonberry.png"] , [src="images/meadow.png"] , [src="images/dandelight.png"] {
     width: 100%;       /* take full container width */
     max-width: 500px;  /* limit max size */
