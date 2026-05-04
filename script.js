@@ -81,3 +81,25 @@ function animate() {
 
 animate();
 </script>
+
+<script>
+window.addEventListener("load", () => {
+    document.body.classList.add("fade-in");
+});
+</script>
+
+        <script>
+document.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", function(e) {
+        e.preventDefault();
+
+        const href = this.href;
+
+        document.body.style.opacity = 0;
+
+        setTimeout(() => {
+            window.location.href = href;
+        }, 800); // match CSS duration
+    });
+});
+</script>
