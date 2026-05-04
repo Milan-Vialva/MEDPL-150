@@ -43,7 +43,7 @@ img[src="images/flower.png"] {
             drop-shadow(0 0 20px #A13582);
 }
 
-.image-container img [src="images/spring.png"] , [src="images/forest.png"] , [src="images/village.png"] , [src="images/stranded.png"] , [src="images/eagle.png"] , [src="images/puzzle.png"] , [src="images/moonberry.png"] , [src="images/meadow.png"] , [src="images/dandelight.png"] {
+.image-container img [src="images/spring.png"] , [src="images/forest.png"] , [src="images/village.png"] , [src="images/stranded.png"] , [src="images/eagle.png"] , [src="images/puzzle.png"] , [src="images/moonberry.png"] , [src="images/meadow.png"] , [src="images/dandelight.png"] , [src="images/siren.png"] {
     width: 100%;       /* take full container width */
     max-width: 500px;  /* limit max size */
     border-radius: 20px;
