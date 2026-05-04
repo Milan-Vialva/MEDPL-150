@@ -97,6 +97,7 @@ h1, h2, h3, p {
 img {
   max-width: 100%;
   height: auto;
+  width="450"
 }
 
 /* Apply Merriweather font */
