@@ -120,3 +120,17 @@ h1, h2, h3, p {
   margin: 0 auto;
   padding: 20px;
 }
+
+/* Style all links inside h3 */
+h3 a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: 0.3s ease;
+}
+
+/* Glow effect on hover */
+h3 a:hover {
+  color: #AF8DF0;
+  text-shadow: 0 0 10px #AF8DF0, 0 0 20px #9392F0;
+}
