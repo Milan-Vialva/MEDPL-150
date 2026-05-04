@@ -16,16 +16,17 @@ I whisper without a voice, I dance without feet, I vanish when caught. What am I
        
         <h3><a href="homework8b.html">Back to Start</a></h3>
 
-        <script>
+       <script>
 const text = document.getElementById("riddleText");
 const content = text.textContent;
 text.textContent = "";
 
 [...content].forEach((letter, i) => {
     const span = document.createElement("span");
-    span.textContent = letter;
 
-    // stagger timing (spell effect)
+    // Preserve spaces properly
+    span.innerHTML = (letter === " ") ? "&nbsp;" : letter;
+
     span.style.animationDelay = (i * 0.04) + "s";
 
     text.appendChild(span);
