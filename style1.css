@@ -17,7 +17,7 @@ img[src="images/flower.png"] {
     border-radius: 25px;
 }
 
-.image-container img [src="images/spring.png"] , [src="images/forest.png"] , [src="images/village.png"] , [src="images/stranded.png"] , [src="images/eagle.png"] {
+.image-container img [src="images/spring.png"] , [src="images/forest.png"] , [src="images/village.png"] , [src="images/stranded.png"] , [src="images/eagle.png"] , [src="images/puzzle.png"] {
     width: 100%;       /* take full container width */
     max-width: 500px;  /* limit max size */
     border-radius: 20px;
