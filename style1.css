@@ -20,6 +20,11 @@ body {
     text-align: center;
 }
 
+h3 a:hover {
+  color: #AF8DF0;
+  text-shadow: 0 0 10px #AF8DF0, 0 0 20px #9392F0;
+}
+
 /* Center all images */
 img {
     display: block;
