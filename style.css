@@ -1,58 +1,60 @@
+/* Color variables for easy reuse */
+:root {
+  --dark: #582A80;
+  --mid: #9392F0;
+  --light: #AF8DF0;
+}
+
+/* Page background + default text */
 body {
-  margin: 0;
+  background-color: var(--dark);
+  color: white;
+  text-align: center;
   font-family: Arial, sans-serif;
-  background-color: #9392F0; /* light background */
+  margin: 0;
+  padding: 0;
 }
 
-/* Layout container */
-.container {
-  display: flex;
-  height: 100vh;
+/* Center all headers and text */
+h1, h2, h3, h4, p {
+  text-align: center;
 }
 
-/* Sidebar (links on the side) */
-.sidebar {
+/* Headshot image styling */
+.headshot {
+  display: block;
+  margin: 20px auto;
+  border-radius: 20px;
   width: 200px;
-  background-color: #582A80;
-  display: flex;
-  flex-direction: column;
-  padding-top: 20px;
+  transition: 0.3s ease;
 }
 
-/* Sidebar links */
-.sidebar a {
-  color: #AF8DF0;
+/* Purple glow on hover */
+.headshot:hover {
+  box-shadow: 0 0 20px var(--light), 0 0 40px var(--mid);
+}
+
+/* Bottom navigation container */
+.navbar {
+  position: fixed;
+  bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+/* Link styling */
+.navbar a {
   text-decoration: none;
-  padding: 15px;
-  text-align: center;
-  transition: 0.3s;
+  color: white;
+  font-size: 18px;
+  padding: 10px 15px;
+  transition: 0.3s ease;
 }
 
-/* Hover effect */
-.sidebar a:hover {
-  background-color: #AF8DF0;
-  color: #582A80;
-}
-
-/* Main content (centered text) */
-.content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;  /* vertical center */
-  align-items: center;      /* horizontal center */
-  text-align: center;
-  color: #582A80;
-  padding: 20px;
-}
-
-/* Optional: make headings pop */
-.content h1 {
-  color: #582A80;
-}
-
-/* Optional: paragraph styling */
-.content p {
-  color: #582A80;
-  max-width: 600px;
+/* Glow effect on hover */
+.navbar a:hover {
+  color: var(--light);
+  text-shadow: 0 0 10px var(--light), 0 0 20px var(--mid);
 }
