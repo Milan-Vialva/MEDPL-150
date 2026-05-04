@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <title>siren</title>
+          <link rel="stylesheet" href="style1.css">
+      </head>
+    <body>
+      <h2>The Siren has Trapped You :O</h2>
+      
+      <img src="images/siren.png" id="floatFollow" alt="Siren">
+      
+      <p>You and your friends followed the singing. As you got closer to the voice it started to take over your consiousness, but you also couldnt stop walking. The forest siren appears sittng on a rock still singing sweetly. You and your freinds, unable to break away, sat and listened with no intention of leaving.</p>
+      
+       
+        <h3><a href="homework8b.html">Back to Start</a></h3>
+        
+        <script>
+const img = document.getElementById("floatFollow");
+
+let mouseX = 0;
+let mouseY = 0;
+
+let currentX = window.innerWidth / 2;
+let currentY = window.innerHeight / 2;
+
+document.addEventListener("mousemove", (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+});
+
+function animate() {
+    // Smooth follow (ease effect)
+    currentX += (mouseX - currentX) * 0.05;
+    currentY += (mouseY - currentY) * 0.05;
+
+    img.style.left = currentX + "px";
+    img.style.top = currentY + "px";
+
+    requestAnimationFrame(animate);
+}
+
+animate();
+</script>
+        
+    </body>
+    </html>
+</DOCTYPE>
