@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #9392F0; /* light background */
+}
+
+/* Layout container */
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar (links on the side) */
+.sidebar {
+  width: 200px;
+  background-color: #582A80;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+/* Sidebar links */
+.sidebar a {
+  color: #AF8DF0;
+  text-decoration: none;
+  padding: 15px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+/* Hover effect */
+.sidebar a:hover {
+  background-color: #AF8DF0;
+  color: #582A80;
+}
+
+/* Main content (centered text) */
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* vertical center */
+  align-items: center;      /* horizontal center */
+  text-align: center;
+  color: #582A80;
+  padding: 20px;
+}
+
+/* Optional: make headings pop */
+.content h1 {
+  color: #582A80;
+}
+
+/* Optional: paragraph styling */
+.content p {
+  color: #582A80;
+  max-width: 600px;
+}
