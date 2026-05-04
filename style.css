@@ -58,3 +58,24 @@ h1, h2, h3, h4, p {
   color: var(--light);
   text-shadow: 0 0 10px var(--light), 0 0 20px var(--mid);
 }
+
+/* Center text + font */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #582A80;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+/* Center headers and paragraphs */
+h1, h2, h3, p {
+  text-align: center;
+}
+
+/* Control text width so it's not too wide */
+.content {
+  max-width: 700px;   /* adjust if you want narrower/wider */
+  margin: 0 auto;     /* centers the block */
+  padding: 20px;
+}
