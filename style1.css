@@ -1,5 +1,19 @@
 /* General page styling */
 body {
+    opacity: 0;
+    transition: opacity 0.8s ease, filter 0.8s ease;
+}
+
+body.fade-in {
+    opacity: 1;
+    filter: brightness(1);
+}
+
+body {
+    filter: brightness(0.8);
+}
+
+body {
     background-color: #A15B35;
     margin: 0;
     font-family: Arial, sans-serif;
