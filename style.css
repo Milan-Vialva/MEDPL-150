@@ -34,18 +34,18 @@
   }
 }
 
-/* Bottom navigation container */
-.navbar {
-  position: fixed;
-  bottom: 20px;
+/* Footer container */
+.footer {
   width: 100%;
   display: flex;
   justify-content: center;
   gap: 40px;
+  padding: 20px 0;
+  margin-top: 40px;
 }
 
-/* Link styling */
-.navbar a {
+/* Links */
+.footer a {
   text-decoration: none;
   color: white;
   font-size: 18px;
@@ -53,12 +53,11 @@
   transition: 0.3s ease;
 }
 
-/* Glow effect on hover */
-.navbar a:hover {
-  color: var(--light);
-  text-shadow: 0 0 10px var(--light), 0 0 20px var(--mid);
+/* Glow on hover */
+.footer a:hover {
+  color: #AF8DF0;
+  text-shadow: 0 0 10px #AF8DF0, 0 0 20px #9392F0;
 }
-
 /* Apply to everything to prevent overflow issues */
 * {
   box-sizing: border-box;
