@@ -44,9 +44,10 @@ text.textContent = "";
 
 [...content].forEach((letter, i) => {
     const span = document.createElement("span");
-    span.textContent = letter;
 
-    // stagger timing (spell effect)
+    // Preserve spaces properly
+    span.innerHTML = (letter === " ") ? "&nbsp;" : letter;
+
     span.style.animationDelay = (i * 0.04) + "s";
 
     text.appendChild(span);
