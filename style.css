@@ -11,12 +11,27 @@
   margin: 20px auto;
   border-radius: 20px;
   width: 200px;
-  transition: 0.3s ease;
+
+  /* Always-on glow */
+  box-shadow: 0 0 15px #AF8DF0, 0 0 30px #9392F0;
+
+  /* Smooth animation */
+  animation: glowPulse 3s ease-in-out infinite alternate;
 }
 
-/* Purple glow on hover */
+/* Optional: slightly stronger glow on hover */
 .headshot:hover {
-  box-shadow: 0 0 20px var(--light), 0 0 40px var(--mid);
+  box-shadow: 0 0 25px #AF8DF0, 0 0 50px #9392F0;
+}
+
+/* Gentle pulsing effect */
+@keyframes glowPulse {
+  from {
+    box-shadow: 0 0 10px #AF8DF0, 0 0 20px #9392F0;
+  }
+  to {
+    box-shadow: 0 0 20px #AF8DF0, 0 0 40px #9392F0;
+  }
 }
 
 /* Bottom navigation container */
