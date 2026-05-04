@@ -97,3 +97,24 @@ img {
   border: 2px solid #9392F0;
   box-shadow: 0 0 20px #AF8DF0, 0 0 40px #9392F0;
 }
+
+/* Apply Merriweather font */
+body {
+  font-family: 'Merriweather', serif;
+  background-color: #582A80;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+/* Center headers and paragraphs */
+h1, h2, h3, p {
+  text-align: center;
+}
+
+/* Control width */
+.content {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+}
