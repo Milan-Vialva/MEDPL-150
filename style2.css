@@ -197,3 +197,37 @@ img {
     color: #A13582;
     text-shadow: 0 0 10px #A13582;
 }
+
+/* Overlay (hidden by default) */
+.overlay {
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+
+    background: rgba(0, 0, 0, 0.4);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+/* Show overlay on hover */
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+/* Text styling */
+.image-text {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+
+    text-shadow: 0 0 10px #A13582;
+}
+
+img {
+    max-width: 400px;
+}
