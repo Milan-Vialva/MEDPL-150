@@ -140,6 +140,17 @@ img {
     transform: translateY(0);
 }
 
+.image-container {
+    width: 220px;
+    max-width: 80%;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
 /* ===== RIDDLE TEXT ===== */
 #riddleText {
     font-size: 24px;
