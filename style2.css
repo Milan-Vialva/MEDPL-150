@@ -2,6 +2,12 @@
 body {
     opacity: 0;
     transition: opacity 0.8s ease, filter 0.8s ease;
+    filter: brightness(0.8);
+
+    background-color: #A15B35;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
 }
 
 body.fade-in {
@@ -9,70 +15,90 @@ body.fade-in {
     filter: brightness(1);
 }
 
-body {
-    filter: brightness(0.8);
+/* Headings */
+h2, h3, p {
+    text-align: center;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
-body {
-    background-color: #A15B35;
-    margin: 0;
-    font-family: Arial, sans-serif;
-    text-align: center;
+h2 {
+    color: #2f5233;
+    text-shadow:
+        0 0 2px #4E7F54,
+        0 0 6px #6fbf73,
+        0 0 10px #8cff9a;
+}
+
+h3 {
+    color: white;
+    text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff;
+    animation: glowPulse 4s infinite alternate;
 }
 
 h3 a:hover {
-  color: #AF8DF0;
-  text-shadow: 0 0 10px #AF8DF0, 0 0 20px #9392F0;
+    color: #AF8DF0;
+    text-shadow: 0 0 10px #AF8DF0, 0 0 20px #9392F0;
 }
 
-/* Center all images */
+/* Glow animation */
+@keyframes glowPulse {
+    from {
+        text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff;
+    }
+    to {
+        text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 40px #ff00ff;
+    }
+}
+
+/* Images */
 img {
     display: block;
     margin: 20px auto;
 }
 
-/* Flower image with curved edges */
+/* Specific flower styling */
 img[src="images/flower.png"] {
     border-radius: 25px;
 }
 
+/* Keep image sizes consistent */
 .small-img {
-    width: 450px !important;
+    width: 450px;
     height: auto;
 }
 
+/* Floating animation (flower etc.) */
 .floating-img {
     width: 200px;
     height: auto;
-
     animation: float 3s ease-in-out infinite;
+    filter: drop-shadow(0 0 10px #A13582);
 }
 
-/* Smooth up-and-down motion */
 @keyframes float {
     0%   { transform: translateY(0px); }
     50%  { transform: translateY(-15px); }
     100% { transform: translateY(0px); }
 }
 
-.floating-img {
-    animation: float 3s ease-in-out infinite;
-    
-    filter: drop-shadow(0 0 10px #A13582);
-}
-
-.image-container img[src="images/spring.png"] , [src="images/forest.png"] , [src="images/village.png"] , [src="images/stranded.png"] , [src="images/eagle.png"] , [src="images/puzzle.png"] , [src="images/moonberry.png"] , [src="images/meadow.png"] , [src="images/dandelight.png"] , [src="images/siren.png"] , [src="images/home.png"] {
-    width: 100%;       /* take full container width */
-    max-width: 500px;  /* limit max size */
+/* FIXED SELECTOR (this was breaking stuff) */
+.image-container img[src="images/spring.png"],
+.image-container img[src="images/forest.png"],
+.image-container img[src="images/village.png"],
+.image-container img[src="images/stranded.png"],
+.image-container img[src="images/eagle.png"],
+.image-container img[src="images/puzzle.png"],
+.image-container img[src="images/moonberry.png"],
+.image-container img[src="images/meadow.png"],
+.image-container img[src="images/dandelight.png"],
+.image-container img[src="images/siren.png"],
+.image-container img[src="images/home.png"] {
+    width: 100%;
+    max-width: 500px;
     border-radius: 20px;
 }
 
-/* Center text globally */
-p, h1, h2, h3 {
-    text-align: center;
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-}
-
+/* Paragraph styling */
 p {
     width: 80%;
     max-width: 600px;
@@ -88,15 +114,6 @@ p {
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
 }
 
-#riddleText span {
-    color: #FFD700; /* gold-yellow */
-
-    text-shadow:
-        0 0 5px #FFD700,
-        0 0 10px #FFD700,
-        0 0 20px #FFA500;
-}
-
 .plain-text {
     background: none;
     padding: 0;
@@ -104,41 +121,7 @@ p {
     color: white;
 }
 
-/* H2 header styling */
-h2 {
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-    color: #2f5233;
-    
-    /* Neon glow effect */
-    text-shadow:
-    0 0 2px #4E7F54,
-    0 0 6px #6fbf73,
-    0 0 10px #8cff9a;
-
-}
-
-h3 {
-    color: white;
-    text-shadow:
-        0 0 5px #ff00ff,
-        0 0 10px #ff00ff;
-    animation: glowPulse 4s infinite alternate;
-}
-
-@keyframes glowPulse {
-    from {
-        text-shadow:
-            0 0 5px #ff00ff,
-            0 0 10px #ff00ff;
-    }
-    to {
-        text-shadow:
-            0 0 10px #ff00ff,
-            0 0 20px #ff00ff,
-            0 0 40px #ff00ff;
-    }
-}
-
+/* Hover image glow */
 .hover-img {
     width: 250px;
     border-radius: 15px;
@@ -147,27 +130,19 @@ h3 {
 
 .hover-img:hover {
     transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-}
-
-.hover-img:hover {
     box-shadow: 0 0 15px #A13582;
 }
 
-/* Optional: smoother look */
-* {
-    box-sizing: border-box;
-}
-
+/* Container */
 .image-container {
     position: relative;
     display: block;
     margin: 30px auto;
-    width: 300px; /* adjust size */
+    width: 300px;
     overflow: hidden;
 }
 
-/* All images inside container */
+/* Image inside container */
 .image-container img {
     width: 100%;
     display: block;
@@ -204,7 +179,7 @@ h3 {
     opacity: 1;
 }
 
-/* Text */
+/* Overlay text */
 .image-text {
     font-family: "Palatino Linotype", Palatino, serif;
     color: #4E7F54;
@@ -226,41 +201,28 @@ h3 {
     transform: translateY(0);
 }
 
+/* Timer */
 #timer {
     font-family: "Palatino Linotype", Palatino, serif;
     font-size: 40px;
     color: #4E7F54;
-    
+    font-weight: bold;
+
     text-shadow:
         0 0 5px #4E7F54,
         0 0 10px #4E7F54,
         0 0 20px #4E7F54;
 }
 
-/* normal paragraph text */
+/* Text */
 .normal-text {
     font-size: 18px;
     color: white;
 }
 
-/* timer ONLY */
-#timer {
-    font-family: "Palatino Linotype", Palatino, serif;
-    font-size: 40px;
-    color: #4E7F54;
-
-    /* glow effect */
-    text-shadow:
-        0 0 5px #4E7F54,
-        0 0 10px #4E7F54,
-        0 0 20px #4E7F54;
-
-    font-weight: bold;
-}
-
+/* Fade in */
 .fade-in {
     opacity: 0;
-    filter: brightness(0.8);
     animation: fadeIn 2s ease forwards;
 }
 
@@ -271,40 +233,34 @@ h3 {
     }
 }
 
-/* Container acts like the image */
+/* Links */
 .choice-link {
     display: block;
     margin: 15px 0;
-
     font-family: Palatino, serif;
     font-size: 22px;
     text-align: center;
-
     color: #4E7F54;
     text-decoration: none;
-
     transition: 0.3s;
 }
 
 .choice-link:hover {
     color: #A13582;
     letter-spacing: 2px;
-
-    text-shadow:
-        0 0 10px #A13582,
-        0 0 20px #A13582;
+    text-shadow: 0 0 10px #A13582, 0 0 20px #A13582;
 }
 
-
+/* Riddle text */
 #riddleText {
     font-family: "Palatino Linotype", Palatino, serif;
     font-size: 24px;
-    text-align: center;
     margin: 60px auto;
     width: 70%;
+    animation: shimmer 2s infinite alternate;
 }
 
-/* Each letter */
+/* Letters */
 #riddleText span {
     opacity: 0;
     display: inline-block;
@@ -320,40 +276,29 @@ h3 {
     animation: revealLetter 0.5s forwards;
 }
 
-/* Spell-like animation */
+/* Letter animation */
 @keyframes revealLetter {
-    0% {
+    from {
         opacity: 0;
         transform: translateY(10px);
-        text-shadow: 0 0 2px #4E7F54;
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-        text-shadow:
-            0 0 10px #4E7F54,
-            0 0 20px #A13582;
-    }
-}
-
-#riddleText {
-    animation: shimmer 2s infinite alternate;
-}
-
-#riddleText span {
-    animation: revealLetter 0.5s forwards;
-}
-
-@keyframes shimmer {
-    from {
-        text-shadow:
-            0 0 5px #4E7F54,
-            0 0 10px #4E7F54;
     }
     to {
-        text-shadow:
-            0 0 10px #A13582,
-            0 0 25px #A13582,
-            0 0 40px #4E7F54;
+        opacity: 1;
+        transform: translateY(0);
     }
+}
+
+/* Glow shimmer */
+@keyframes shimmer {
+    from {
+        text-shadow: 0 0 5px #4E7F54, 0 0 10px #4E7F54;
+    }
+    to {
+        text-shadow: 0 0 10px #A13582, 0 0 25px #A13582, 0 0 40px #4E7F54;
+    }
+}
+
+/* Global fix */
+* {
+    box-sizing: border-box;
 }
