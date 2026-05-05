@@ -10,11 +10,6 @@ body {
     text-align: center;
 }
 
-body.fade-in {
-    opacity: 1;
-    filter: brightness(1);
-}
-
 /* Headings */
 h2, h3, p {
     text-align: center;
@@ -218,19 +213,6 @@ p {
 .normal-text {
     font-size: 18px;
     color: white;
-}
-
-/* Fade in */
-.fade-in {
-    opacity: 0;
-    animation: fadeIn 2s ease forwards;
-}
-
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-        filter: brightness(1.1);
-    }
 }
 
 /* Links */
