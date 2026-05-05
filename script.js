@@ -54,33 +54,6 @@ text.textContent = "";
 });
 </script>
 
-<script>
-const img = document.getElementById("floatFollow");
-
-let mouseX = 0;
-let mouseY = 0;
-
-let currentX = window.innerWidth / 2;
-let currentY = window.innerHeight / 2;
-
-document.addEventListener("mousemove", (e) => {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
-});
-
-function animate() {
-    // Smooth follow (ease effect)
-    currentX += (mouseX - currentX) * 0.05;
-    currentY += (mouseY - currentY) * 0.05;
-
-    img.style.left = currentX + "px";
-    img.style.top = currentY + "px";
-
-    requestAnimationFrame(animate);
-}
-
-animate();
-</script>
 
 <script>
 window.addEventListener("load", () => {
