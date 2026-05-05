@@ -116,6 +116,13 @@ img {
   height: auto;
 }
 
+.full-img {
+  width: auto;
+  max-width: none;
+  display: block;
+  margin: 20px auto;
+}
+
 /* Apply Merriweather font */
 body {
   font-family: 'Merriweather', serif;
