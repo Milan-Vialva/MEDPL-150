@@ -1,6 +1,6 @@
 /* General page styling */
 body {
-    opacity: 0;
+    opacity: 1;
     transition: opacity 0.8s ease, filter 0.8s ease;
     filter: brightness(0.8);
 
