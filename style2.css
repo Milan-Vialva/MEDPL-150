@@ -1,0 +1,175 @@
+/* ===== BASE ===== */
+body {
+    background-color: #A15B35;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+
+    opacity: 0;
+    animation: fadeInPage 1s ease forwards;
+}
+
+@keyframes fadeInPage {
+    to { opacity: 1; }
+}
+
+/* ===== TEXT ===== */
+p, h1, h2, h3 {
+    text-align: center;
+    font-family: "Palatino Linotype", Palatino, serif;
+}
+
+/* Paragraph box */
+p {
+    width: 80%;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+
+    background-color: #f2d6c9;
+    border-radius: 15px;
+
+    text-align: left;
+    line-height: 1.6;
+
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+/* ===== HEADINGS (LESS HEAVY) ===== */
+h3 {
+    color: white;
+    text-shadow: 0 0 8px #ff00ff;
+}
+
+/* Hover glow (kept) */
+h3 a:hover {
+    color: #AF8DF0;
+    text-shadow: 0 0 10px #AF8DF0, 0 0 20px #9392F0;
+}
+
+/* ===== IMAGES ===== */
+img {
+    display: block;
+    margin: 20px auto;
+}
+
+/* Floating (reduced intensity) */
+.floating-img {
+    width: 200px;
+    animation: float 5s ease-in-out infinite;
+
+    /* lighter glow */
+    filter: drop-shadow(0 0 10px #A13582);
+}
+
+@keyframes float {
+    0%   { transform: translateY(0px); }
+    50%  { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+/* ===== IMAGE CONTAINER ===== */
+.image-container {
+    position: relative;
+    display: block;
+    margin: 30px auto;
+    width: 300px;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 25px;
+    transition: transform 0.4s ease;
+}
+
+.image-container:hover img {
+    transform: scale(1.05);
+}
+
+/* Overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    border-radius: 25px;
+    background: rgba(0, 0, 0, 0.4);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+.image-text {
+    color: #4E7F54;
+    font-size: 22px;
+
+    opacity: 0;
+    transition: 0.4s ease;
+
+    text-shadow: 0 0 10px #4E7F54;
+}
+
+.image-container:hover .image-text {
+    opacity: 1;
+}
+
+/* ===== RIDDLE (FIXED PERFORMANCE) ===== */
+#riddleText {
+    font-size: 24px;
+    margin: 60px auto;
+    width: 70%;
+
+    /* ONE shimmer instead of hundreds */
+    animation: shimmer 3s infinite alternate;
+}
+
+#riddleText span {
+    opacity: 0;
+    display: inline-block;
+    transform: translateY(10px);
+    animation: revealLetter 0.4s forwards;
+}
+
+@keyframes revealLetter {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes shimmer {
+    from {
+        text-shadow: 0 0 5px #4E7F54;
+    }
+    to {
+        text-shadow: 0 0 15px #A13582;
+    }
+}
+
+/* ===== LINKS ===== */
+.choice-link {
+    display: block;
+    margin: 15px 0;
+    font-size: 20px;
+
+    color: #4E7F54;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.choice-link:hover {
+    color: #A13582;
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px #A13582;
+}
