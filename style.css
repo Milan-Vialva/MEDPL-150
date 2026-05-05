@@ -109,11 +109,11 @@ h1, h2, h3, p {
 
 /* Prevent images or elements from stretching layout */
 img {
-  height: auto;
   display: block;
   margin: 20px auto;
-  width: auto;
+  width: 300px;
   max-width: 100%;
+  height: auto;
 }
 
 /* Apply Merriweather font */
