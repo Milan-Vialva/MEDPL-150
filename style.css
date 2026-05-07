@@ -116,8 +116,9 @@ img { display: block;
     }
 
 .full-img {
-  width: auto;
-  max-width: none;
+  width: 80%;
+  max-width: 500px;
+  height: auto;
   display: block;
   margin: 20px auto;
 }
