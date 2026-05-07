@@ -111,8 +111,7 @@ h1, h2, h3, p {
 img {
   display: block;
   margin: 20px auto;
-  max-width: 250px;  /* caps the size */
-  width: 100%;       /* scales down nicely */
+  max-width: 250px;
   height: auto;
 }
 
