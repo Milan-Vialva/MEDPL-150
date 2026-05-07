@@ -108,12 +108,12 @@ h1, h2, h3, p {
 }
 
 /* Prevent images or elements from stretching layout */
-img {
-  display: block;
-  margin: 20px auto;
-  max-width: 250px;
-  height: auto;
-}
+img { display: block; 
+     margin: 20px auto; 
+     max-width: 250px; /* caps the size */ 
+     width: 100%; /* scales down nicely */ 
+     height: auto; 
+    }
 
 .full-img {
   width: auto;
