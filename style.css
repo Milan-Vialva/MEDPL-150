@@ -123,12 +123,9 @@ img { display: block;
   margin: 20px auto;
 }
 
-.big-img {
-  display: block;
-  margin: 20px auto;
-
-  width: 650px;      /* make it big */
-  max-width: none;   /* prevents shrinking */
+img.big-img {
+  max-width: none;
+  width: 650px;
 }
 
 /* Apply Merriweather font */
