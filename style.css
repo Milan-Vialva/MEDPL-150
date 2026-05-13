@@ -123,6 +123,14 @@ img { display: block;
   margin: 20px auto;
 }
 
+.big-img {
+  display: block;
+  margin: 20px auto;
+
+  width: 650px;      /* make it big */
+  max-width: none;   /* prevents shrinking */
+}
+
 /* Apply Merriweather font */
 body {
   font-family: 'Merriweather', serif;
